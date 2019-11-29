@@ -12,9 +12,6 @@
     min-height: 80px
   //&__menu-button
     //margin-right: 30px
-  &__logo-img
-    img
-      width: 150px
   &__mobile, &__landline
     text-align: right
   &__phone
@@ -29,18 +26,22 @@
     font-size: 14px
     color: $text-color-light
     text-decoration: none
+  &__logo-img
+    width: 150px
+    img
+      width: 100%
 
 .menu
   position: fixed
   top: 80px
   left: 0
   width: 100%
-  padding: 16px 0
+  padding: 6px 0
   background-color: $primary
-  //opacity: 0
+  opacity: 0
   &_active
     transform: translateY(0)
-    //opacity: 1
+    opacity: 1
   &__nav
     display: flex
     align-items: center
@@ -50,6 +51,10 @@
     font-size: 17px
     text-transform: uppercase
     color: #ffffff
+    display: block
+    padding: 10px
+    &:hover
+      background-color: #510bba
   &-button
     display: flex
     flex-direction: column
@@ -61,6 +66,10 @@
     border-left: 1px solid rgba(#510bba, 0.1)
     height: 80px
     width: 70px
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
 
     &__line
       display: block
@@ -92,7 +101,7 @@
   .logo
     display: none
   .menu
-    display: none
+    //display: none
     &-button
       height: 60px
     &__nav
