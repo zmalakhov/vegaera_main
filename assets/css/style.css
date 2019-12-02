@@ -176,6 +176,11 @@ body {
   text-align: right;
 }
 
+.navbar__mobile:hover,
+.navbar__landline:hover {
+  color: #507fe1;
+}
+
 .navbar__phone {
   display: block;
   margin-bottom: 5px;
@@ -183,6 +188,14 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
   color: #262626;
+}
+
+.navbar__phone:hover {
+  color: #510bba;
+}
+
+.navbar__email:hover {
+  color: #507fe1;
 }
 
 .navbar__small-text {
@@ -198,6 +211,14 @@ body {
 
 .navbar__logo-img img {
   width: 100%;
+}
+
+.navbar__button:hover {
+  background-color: rgba(137, 169, 235, 0.29);
+}
+
+.navbar__button:focus {
+  background-color: rgba(137, 169, 235, 0.29);
 }
 
 .menu {
@@ -237,7 +258,7 @@ body {
 }
 
 .menu__link:hover {
-  background-color: #510bba;
+  background-color: rgba(137, 169, 235, 0.29);
 }
 
 .menu-button {
@@ -264,10 +285,12 @@ body {
 
 .menu-button:hover {
   cursor: pointer;
+  background-color: rgba(137, 169, 235, 0.29);
 }
 
 .menu-button:focus {
   outline: none;
+  background-color: rgba(137, 169, 235, 0.29);
 }
 
 .menu-button__line {
@@ -672,6 +695,12 @@ body {
   border: none;
   padding: 13px;
   font-size: 13px;
+}
+
+.catalog-card__buttons .fitting-button:hover,
+.catalog-card__buttons .add-button:hover {
+  background-color: rgba(137, 169, 235, 0.71);
+  color: #ffffff;
 }
 
 .catalog-card-more {
