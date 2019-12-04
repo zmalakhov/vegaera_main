@@ -1099,3 +1099,41 @@ body {
   text-decoration: none;
   color: #262626;
 }
+
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.about-block__left,
+.about-block__right {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.about-block__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about-block__right img {
+  width: 100%;
+}
+
+.about__description {
+  margin-top: 0;
+  font-size: 21px;
+  color: #262626;
+}
